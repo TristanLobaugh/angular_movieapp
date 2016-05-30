@@ -1,0 +1,85 @@
+body{
+	#movieApp-wrapper{
+		background-color: #eeeeee;
+	}
+	#search-wrapper{
+		margin-top: 10px;
+		.form-group{
+				position: relative;
+				text-align: center;
+			.form-control{
+				width: auto;
+				display: inline;
+				margin-right: -4px;
+			}
+			.form-control:focus{
+			    border-color: #cccccc;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			}
+
+			#select-wrapper{
+				display: inline;
+				position: relative;
+				#search-group{
+					background-color: #eee;
+					border-radius: 4px 0 0 4px;
+					-webkit-appearance: none;
+					height: 34px;
+				}
+				#select-caret{
+					position: absolute;
+					top: 7px;
+					right: 4px;
+				}
+			}
+			#input-wrapper{
+				position: relative;
+				display: inline;
+				text-align: left;
+				#search-text{
+					border-radius: 0;			
+					border-right: none;
+					border-left: none;
+				}
+				.perfect-match{
+					color: blue;	
+				}
+				.perfect-match:hover{
+					cursor: pointer;
+				}
+				#matches-wrapper{
+					cursor: pointer;
+					position: absolute;
+					top: 24px;
+					left: 0px;
+					border: 1px solid #ccc;
+					width: 170px;
+					.match{
+						padding: 5px 0 5px 5px;
+					}
+					.match:hover{
+						background-color: #eee;
+					}
+					.media{
+						color: orange;
+					}
+				}
+			}		
+			#search-button{
+				height: 34px;
+				border-radius: 0 4px 4px 0;
+				margin-top: -2px;
+			}
+		}
+	}
+	#poster-wrapper{
+		img{
+			display: block;
+			margin: auto;
+		}
+	}
+	#close-btn{
+		margin-top: 10px;
+	}	
+}	

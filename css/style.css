@@ -1,0 +1,99 @@
+/* line 2, ../compass/sass/style.scss */
+body #movieApp-wrapper {
+  background-color: #eeeeee;
+}
+/* line 5, ../compass/sass/style.scss */
+body #search-wrapper {
+  margin-top: 10px;
+}
+/* line 7, ../compass/sass/style.scss */
+body #search-wrapper .form-group {
+  position: relative;
+  text-align: center;
+}
+/* line 10, ../compass/sass/style.scss */
+body #search-wrapper .form-group .form-control {
+  width: auto;
+  display: inline;
+  margin-right: -4px;
+}
+/* line 15, ../compass/sass/style.scss */
+body #search-wrapper .form-group .form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 21, ../compass/sass/style.scss */
+body #search-wrapper .form-group #select-wrapper {
+  display: inline;
+  position: relative;
+}
+/* line 24, ../compass/sass/style.scss */
+body #search-wrapper .form-group #select-wrapper #search-group {
+  background-color: #eee;
+  border-radius: 4px 0 0 4px;
+  -webkit-appearance: none;
+  height: 34px;
+}
+/* line 30, ../compass/sass/style.scss */
+body #search-wrapper .form-group #select-wrapper #select-caret {
+  position: absolute;
+  top: 7px;
+  right: 4px;
+}
+/* line 36, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper {
+  position: relative;
+  display: inline;
+  text-align: left;
+}
+/* line 40, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper #search-text {
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+}
+/* line 45, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper .perfect-match {
+  color: blue;
+}
+/* line 48, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper .perfect-match:hover {
+  cursor: pointer;
+}
+/* line 51, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper #matches-wrapper {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  border: 1px solid #ccc;
+  width: 170px;
+}
+/* line 58, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper #matches-wrapper .match {
+  padding: 5px 0 5px 5px;
+}
+/* line 61, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper #matches-wrapper .match:hover {
+  background-color: #eee;
+}
+/* line 64, ../compass/sass/style.scss */
+body #search-wrapper .form-group #input-wrapper #matches-wrapper .media {
+  color: orange;
+}
+/* line 69, ../compass/sass/style.scss */
+body #search-wrapper .form-group #search-button {
+  height: 34px;
+  border-radius: 0 4px 4px 0;
+  margin-top: -2px;
+}
+/* line 77, ../compass/sass/style.scss */
+body #poster-wrapper img {
+  display: block;
+  margin: auto;
+}
+/* line 82, ../compass/sass/style.scss */
+body #close-btn {
+  margin-top: 10px;
+}

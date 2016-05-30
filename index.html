@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie App in Angular</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body ng-controller="movieController">
+
+	<div id="movieApp-wrapper" class="container-fluid">
+		<div id="head-wrapper" class="col-sm-12 text-center">
+			<h1>The Movie App</h1>
+		</div>
+	</div>
+
+	<div id="search-wrapper" class="container">
+		<form ng-submit="">
+			<div class="form-group">
+				<div id="select-wrapper">
+					<select id="search-group" ng-init="searchGroup = 'All'" class="form-control" ng-model="searchGroup">
+						<option ng-selected>All</option>
+						<option>Movies</option>
+						<option>TV</option>
+						<option>Actors</option>
+					</select>
+					<span id="select-caret" class="caret"></span>
+				</div>
+				<div id="input-wrapper">
+					<input id="search-text" class="form-control" type="text" name="searchText" ng-model="searchText" ng-click="toggleModal(1, singleMatch)">
+					<div id="matches-wrapper" ng-show="multipleMatches">
+						<div class="match" ng-repeat="match in matches track by $index" ng-click="toggleModal(2, match)">{{match.name}} in <span class="media">{{match.media}}</span></div>
+					</div>
+				</div>
+				<button id="search-button" type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+			</div>
+		</form>
+	</div>
+<!-- MODAL -->
+  <modal title="The Movie App" visible="showModal">
+    <h2 id="head" class="text-center">{{head}}</h2>
+	<div id="info-wrapper">
+
+		<div id="poster-wrapper">
+			<img ng-src="{{posterPath}}" onerror="if (this.src != 'error.jpg') this.src = 'img/error.jpg';">
+		</div>
+		<hr>
+		<label>Description:</label>
+		<div id="info-box">{{description}}</div>
+
+	</div>
+      <button id="close-btn" type="button" ng-click="toggleModal(3)" class="btn btn-danger">CLOSE</button>
+
+  </modal>
+
+
+	
+</body>
+</html>
