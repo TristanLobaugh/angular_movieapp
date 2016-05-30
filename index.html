@@ -37,7 +37,7 @@
 						<div class="match" ng-repeat="match in matches track by $index" ng-click="toggleModal(2, match)">{{match.name}} in <span class="media">{{match.media}}</span></div>
 					</div>
 				</div>
-				<button id="search-button" type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+				<button id="search-button" type="button" class="btn btn-warning" ng-click="toggleModal(1, singleMatch)"><span class="glyphicon glyphicon-search"></span></button>
 			</div>
 		</form>
 	</div>
